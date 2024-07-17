@@ -1,1 +1,70 @@
-<p>basics-page works!</p>
+
+<p-panel header="Pipes Básicos" class="p-1">
+    
+    <p>
+        Pipes Incluidos en Angular por defecto
+    </p>
+</p-panel>
+
+<div class="grid">
+
+    <div class="col-12 md:col-4">
+        <p-card header="Uppercase">
+            {{ nameLower | uppercase }}
+        </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+        <p-card header="Lowercase">
+            {{ nameUpper | lowercase }}
+        </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+        <p-card header="Titlecase">
+            {{ fullName | titlecase }}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6">
+        <p-card header="Fechas">
+            <ol>
+                <li>fecha</li>
+                <li>fecha | date </li>
+                <li>fecha | date:'short' </li>
+                <li>fecha | date:'long' </li>
+                <li>fecha | date:'MMMM' </li>
+                <li>fecha | date:'MMMM dd, yyyy' </li>
+            </ol>
+            <hr>
+            <ol>
+                <li>fecha | data:'long':'GMT-6'</li>
+                <li>fecha | data:'long':'GMT-4'</li>
+                <li>fecha | data:'long':'':'es-VE'</li>
+                <li>fecha | data:'long':'':'fr-CA'</li>
+                <li>fecha | data:'long':'':'en-US'</li>
+            </ol>
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6">
+        <p-card header="Fechas">
+            <ol>
+                <li>{{ custonDate }}</li>
+                <li>{{ custonDate | date }}</li>
+                <li>{{ custonDate | date:'short' }}</li>
+                <li>{{ custonDate | date:'long' }}</li>
+                <li>{{ custonDate | date:'MMMM' }}</li>
+                <li>{{ custonDate | date:'MMMM dd, yyyy' }}</li>
+            </ol>
+            <hr>
+            <ol>
+                <li>{{ custonDate | date:'long':'GMT-6' }}</li>
+                <li>{{ custonDate | date:'long':'GMT-4' }}</li>
+                <li>{{ custonDate | date:'long':'':'es-VE' }}</li>
+                <li>{{ custonDate | date:'long':'':'fr-CA' }}</li>
+                <li>{{ custonDate | date:'long':'':'en-US' }}</li>
+            </ol>
+        </p-card>
+    </div>
+
+</div>
+
