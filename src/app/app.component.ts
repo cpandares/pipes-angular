@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
+import { PrimeIcons, MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipe-app';
+  constructor(private primengConfig: PrimeNGConfig) {}
+
+  ngOnInit() {
+      this.primengConfig.ripple = true;
+  }
+
+
 }
