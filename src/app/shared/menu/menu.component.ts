@@ -41,7 +41,7 @@ export class MenuComponent implements OnInit{
           {
             label: 'Ordenar columnas',
             icon: 'pi pi-sort-alt',
-            routerLink: 'ordenar'
+            routerLink: 'custom'
           }
         ]
       }
